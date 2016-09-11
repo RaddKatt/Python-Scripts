@@ -6,7 +6,7 @@ def hello():
     print('\tHowdy!!!')
     print('\tHello there.\n')
 
-print('\n')
+print('\r')
 for i in range(1,4,1):
     print('Saying hellos #' + str(i) + ':')
     hello()
