@@ -26,7 +26,7 @@ def printResults(number):
 print('\r')
 while True:
     try:
-        valueGiven = int(input('Type an integer: '))
+        valueGiven = int(float(input('Type an integer: ')))
         printResults(valueGiven)
 
         while collatz(valueGiven) != 1:
