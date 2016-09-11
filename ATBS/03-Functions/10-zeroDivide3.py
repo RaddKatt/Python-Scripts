@@ -1,7 +1,7 @@
 # This program also demonstrates Exception handling for a 'Divide by Zero' error.
 # Once the execution jumps to the code in the except clause,
 # it does not return to the try clause.
-# Written in Python 3.5.1
+# Written in Python 3.5.1 on Mac
 
 def spam(divideBy):
     return 42 / divideBy

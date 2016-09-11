@@ -1,5 +1,5 @@
 # Another demonstration of local/global variable scoping
-# Written in Python 3.5.1
+# Written in Python 3.5.1 on Mac
 
 def spam():
     global eggs

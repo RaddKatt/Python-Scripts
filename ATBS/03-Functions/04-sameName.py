@@ -1,6 +1,6 @@
 # This program demonstrates local and global variables with the same name
 # This is for POC. Initializing local and global variables with the same name is not recommended.
-# Written in Python 3.5.1
+# Written in Python 3.5.1 on Mac
 
 def spam():
     eggs = 'spam local'

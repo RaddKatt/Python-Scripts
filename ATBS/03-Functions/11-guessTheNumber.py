@@ -1,4 +1,4 @@
-# Written in Python 3.5.1
+# Written in Python 3.5.1 on Mac
 # This is a guess the number game.
 
 import random

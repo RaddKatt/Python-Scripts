@@ -1,6 +1,6 @@
 # Basic Hello World program
 # This program says 'hello' and asks for the user's name
-# Written in Python 3.5.1
+# Written in Python 3.5.1 on Mac
 
 print('Hello, world!')
 myName = input('What is your name? ') # asks for their name

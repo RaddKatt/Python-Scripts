@@ -1,7 +1,7 @@
 # The Collatz Sequence
 # 'The simplest impossible math problem'
 # Provide any number, and using this sequence you will always arrive at 1!
-# Written in Python 3.5.1
+# Written in Python 3.5.1 on Mac
 
 def isEven(number):
     if number % 2 == 0:
@@ -19,14 +19,15 @@ def collatz(number):
 
 def printResults(number):
     if isEven(valueGiven):
-        print('(even)\t' + '\033[1m' + str(valueGiven) + '\033[0m' + ' // 2 = ' + '\033[1m' + str(collatz(valueGiven)) + '\033[0m')
+        print(' (even)\t' + '\033[1m' + str(valueGiven) + '\033[0m' + ' // 2 = ' + '\033[1m' + str(collatz(valueGiven)) + '\033[0m')
     else:
-        print('(odd)\t3 * ' + '\033[1m' + str(valueGiven) + '\033[0m' + ' + 1 = ' + '\033[1m' + str(collatz(valueGiven)) + '\033[0m')
+        print(' (odd)\t3 * ' + '\033[1m' + str(valueGiven) + '\033[0m' + ' + 1 = ' + '\033[1m' + str(collatz(valueGiven)) + '\033[0m')
 
 print('\r')
 while True:
     try:
         valueGiven = int(float(input('Type an integer: ')))
+        print('\r')
         printResults(valueGiven)
 
         while collatz(valueGiven) != 1:

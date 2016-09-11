@@ -1,5 +1,5 @@
 # This program demonstrates Exception handling for a 'Divide by Zero' error.
-# Written in Python 3.5.1
+# Written in Python 3.5.1 on Mac
 
 def spam(divideBy):
     try:

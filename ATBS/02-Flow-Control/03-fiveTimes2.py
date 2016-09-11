@@ -1,6 +1,6 @@
 # This program demonstrates the use of a while loop
 # This program outputs the same results as 003-fiveTimes.py, but by using a while loop instead of a for loop
-# Written in Python 3.5.1
+# Written in Python 3.5.1 on Mac
 
 print('My name is')
 i = 0

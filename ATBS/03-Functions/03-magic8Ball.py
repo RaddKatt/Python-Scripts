@@ -1,5 +1,5 @@
 # This program demonstrates generating return values using return statements for expressions.
-# Written in Python 3.5.1
+# Written in Python 3.5.1 on Mac
 
 import random
 

@@ -1,5 +1,5 @@
 # This program demonstrates a 'Divide by Zero' error.
-# Written in Python 3.5.1
+# Written in Python 3.5.1 on Mac
 
 def spam(divideBy):
     return 42 / divideBy
