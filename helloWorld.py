@@ -1,5 +1,5 @@
 # Basic Hello World program
-# This program says hello and asks for the user's name
+# This program says 'hello' and asks for the user's name
 # Written on Python 3.5.1
 
 print('Hello, world!')
