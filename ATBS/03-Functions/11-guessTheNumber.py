@@ -3,7 +3,11 @@
 
 import random
 
+def footerHR():
+    print('-----------------------------------------------------\n')
+
 secretNumber = random.randint(1,20)
+
 print('\n-----------------------------------------------------')
 print('I am thinking of a number between 1 and 20.\n')
 
@@ -11,7 +15,7 @@ print('I am thinking of a number between 1 and 20.\n')
 for guessesTaken in range(1,7):
     if guessesTaken == 6:
         print('\n*** Nope. The number I was thinking of was ' + str(secretNumber) + '. ***')
-        print('-----------------------------------------------------\n')
+        footerHR()
         break
     else:
         try:
@@ -24,7 +28,7 @@ for guessesTaken in range(1,7):
                 print('-- Your guess is too high.')
             else:
                 print('\n*** Good job! You guessed my number in ' + str(guessesTaken) + ' guesses! ***')
-                print('-----------------------------------------------------\n')
+                footerHR()
                 break
         except ValueError:
             print('-- Error. Value must be a number.')
