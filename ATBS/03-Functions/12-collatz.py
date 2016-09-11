@@ -17,11 +17,19 @@ def collatz(number):
         result = 3 * number + 1
         return result
 
+def getAnswer(valueGiven):
+    if isEven(collatz(valueGiven)):
+        return '\033[1m' + str(collatz(valueGiven)) + '\033[0m' + '\t(result: even)'
+    else:
+        return '\033[1m' + str(collatz(valueGiven)) + '\033[0m' + '\t(result: odd)'
+
 def printResults(number):
     if isEven(valueGiven):
-        print(' (even)\t' + '\033[1m' + str(valueGiven) + '\033[0m' + ' // 2 = ' + '\033[1m' + str(collatz(valueGiven)) + '\033[0m')
+        answer = getAnswer(valueGiven)
+        print(' (even)\t' + '\033[1m' + str(valueGiven) + '\033[0m' + ' // 2 = ' + answer)
     else:
-        print(' (odd)\t3 * ' + '\033[1m' + str(valueGiven) + '\033[0m' + ' + 1 = ' + '\033[1m' + str(collatz(valueGiven)) + '\033[0m')
+        answer = getAnswer(valueGiven)
+        print(' (odd)\t3 * ' + '\033[1m' + str(valueGiven) + '\033[0m' + ' + 1 = ' + answer)
 
 print('\r')
 while True:
