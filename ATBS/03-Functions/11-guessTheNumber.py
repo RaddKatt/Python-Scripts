@@ -4,12 +4,14 @@
 import random
 
 secretNumber = random.randint(1,20)
-print('I am thinking of a number between 1 and 20.')
+print('\n-----------------------------------------------------')
+print('I am thinking of a number between 1 and 20.\n')
 
 # Ask the player to guess 6 times:
 for guessesTaken in range(1,7):
     if guessesTaken == 6:
-        print('Nope. The number I was thinking of was ' + str(secretNumber) + '.')
+        print('\n*** Nope. The number I was thinking of was ' + str(secretNumber) + '. ***')
+        print('-----------------------------------------------------\n')
         break
     else:
         try:
@@ -21,7 +23,8 @@ for guessesTaken in range(1,7):
             elif guess > secretNumber:
                 print('-- Your guess is too high.')
             else:
-                print('Good job! You guessed my number in ' + str(guessesTaken) + ' guesses!')
+                print('\n*** Good job! You guessed my number in ' + str(guessesTaken) + ' guesses! ***')
+                print('-----------------------------------------------------\n')
                 break
         except ValueError:
-            print('Error. Value must be a number.')
+            print('-- Error. Value must be a number.')
