@@ -1,5 +1,5 @@
 # This program demonstrates use of 'continue' and 'break' in a while loop
-# Written on Python 3.5.1
+# Written in Python 3.5.1
 
 while True:
     name = input('Who are you? ')
