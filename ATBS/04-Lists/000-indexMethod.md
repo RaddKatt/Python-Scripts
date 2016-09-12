@@ -13,3 +13,11 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 ValueError: 'howdy howdy howdy' is not in list
 ```
+
+When there are duplicate values in the list, the index of its first appearance is returned.
+
+```
+>>> spam = ['Zophie', 'Pooka', 'Fat-tail', 'Pooka']
+>>> spam.index('Pooka')
+1
+```
