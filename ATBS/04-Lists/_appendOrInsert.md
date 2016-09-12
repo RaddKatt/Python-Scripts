@@ -11,7 +11,7 @@
 >>> spam
 ['cat', 'dog', 'bat', 'moose']
 ```
-`insert()` can add the value to _any_ index within the list:
+`insert()` can add the value to _any index within the list_:
 
 ```python
 >>> spam = ['cat','dog','bat']
