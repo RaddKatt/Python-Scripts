@@ -2,7 +2,7 @@
 
 List values have an `index()` method that can be passed a value. If that value exists in the list, the index of the value is returned. If the value isn't in the list, then Python produces a ValueError error.
 
-```
+```python
 >>> spam = ['hello', 'hi', 'howdy', 'heyas']
 >>> spam.index('hello')
 0
@@ -16,7 +16,7 @@ ValueError: 'howdy howdy howdy' is not in list
 
 When there are duplicate values in the list, the index of its first appearance is returned.
 
-```
+```python
 >>> spam = ['Zophie', 'Pooka', 'Fat-tail', 'Pooka']
 >>> spam.index('Pooka')
 1
