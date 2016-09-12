@@ -1,7 +1,7 @@
 # Make a duplicate copy of a mutable data type
 ### Using the `copy` module
 
-import the `copy` module:
+- import the `copy` module:
 
 ```python
 import copy
@@ -47,3 +47,4 @@ import copy
 >>> myList1
 [['sushi', 'edamame', 'sake'], ['tacos', 'beans', 'beer']] # myList1 is unaffected by index change
 ```
+- More information: https://docs.python.org/3/library/copy.html
