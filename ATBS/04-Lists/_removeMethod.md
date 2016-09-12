@@ -20,6 +20,11 @@
 >>> del myList[2]
 >>> myList
 ['coffee', 'tea', 'beer']
+
+# you can also use slicing
+>>> del myList[:2]
+>>> myList
+['beer']
 ```
 
 `clear()` method - Use to remove all items from a list. Equivalent to `del myList[:]`.
