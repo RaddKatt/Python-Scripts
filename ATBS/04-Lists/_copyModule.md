@@ -7,7 +7,7 @@ import the `copy` module:
 import copy
 ```
 
-- `copy()` function - Use for lists or dictionaries that **don't** contain more lists or dictionaries.
+- `copy()` function - Use for lists or dictionaries that **don't** contain inner lists or dictionaries.
 ```python
 >>> import copy
 >>> myList1 = ['a','b','c','d']
@@ -26,7 +26,7 @@ import copy
 ['a', 'b', 'c', 'd'] # myList1 is unaffected by index change
 ```
 
-- `deepcopy()` function - Use for lists or dictionaries that **do** contain more lists or dictionaries.
+- `deepcopy()` function - Use for lists or dictionaries that **do** contain inner lists or dictionaries.
 
 ```python
 >>> import copy
