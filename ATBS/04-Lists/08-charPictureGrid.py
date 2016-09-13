@@ -12,7 +12,7 @@ grid = [['.','.','.','.','.','.'],
 ['.','O','O','.','.','.'],
 ['.','.','.','.','.','.']]
 
-print('\n=========')
+print('\n=========\n  Grid1  \n=========\n')
 
 for i in range(0,len(grid)):
     newGrid = ''
@@ -20,7 +20,7 @@ for i in range(0,len(grid)):
         newGrid += grid[i][j]
     print(newGrid)
 
-print('\n=========\n')
+print('\n=========\n  Grid2  \n=========\n')
 
 for i in range(0,len(grid[0])):
     newGrid = ''
