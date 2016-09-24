@@ -9,7 +9,10 @@ theBoard = {
     'top-R' : '',
     'mid-L' : '',
     'mid-M' : '',
-    'mid-R' : ''
+    'mid-R' : '',
+    'low-L' : '',
+    'low-M' : '',
+    'low-R' : ''
 }
 
 print(theBoard)
