@@ -16,6 +16,8 @@ theBoard = {
     '9' : ' '
 }
 
+turn = 'X'
+
 def printBoard(board):
     print('\n' + board['1'] + '|' + board['2'] + '|' + board['3'])
     print('-+-+-')
@@ -25,13 +27,14 @@ def printBoard(board):
 
 def checkMove(move):
     while True:
+        errMsg = 'Move entered must be a number between 1 and 9.'
         if not move.isnumeric():
-            print('Move entered must be a number between 1 and 9.')
-            move = input('Turn for ' + turn + '. Move on which space? (1-9) ')
+            print(errMsg)
+            move = input(prompt)
             continue
         elif int(move) < 1 or int(move) > 9:
-            print('Move entered must be a number between 1 and 9.')
-            move = input('Turn for ' + turn + '. Move on which space? (1-9) ')
+            print(errMsg)
+            move = input(prompt)
             continue
         else:
             return move
@@ -42,10 +45,10 @@ def checkWin(board):
     break
 '''
 
-turn = 'X'
 for i in range(9):
+    prompt = 'Turn for ' + turn + '. Move on which space? (1-9) '
     printBoard(theBoard)
-    move = input('Turn for ' + turn + '. Move on which space? (1-9) ')
+    move = input(prompt)
     move = checkMove(move)
 
     theBoard[move] = turn
