@@ -2,6 +2,7 @@
 This program demonstrates a simple data structure to model a game board for Tic Tac Toe
 Written in Python 3.5.1 on Mac
 """
+
 import string
 
 theBoard = {
@@ -38,12 +39,6 @@ def checkMove(move):
             continue
         else:
             return move
-
-'''
-def checkWin(board):
-    if
-    break
-'''
 
 for i in range(9):
     prompt = 'Turn for ' + turn + '. Move on which space? (1-9) '
