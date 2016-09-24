@@ -40,6 +40,12 @@ def checkMove(move):
         else:
             return move
 
+'''
+def checkWin(board):
+    if
+    break
+'''
+
 for i in range(9):
     prompt = 'Turn for ' + turn + '. Move on which space? (1-9) '
     printBoard(theBoard)
