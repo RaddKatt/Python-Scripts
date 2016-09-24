@@ -4,23 +4,29 @@ Written in Python 3.5.1 on Mac
 """
 
 theBoard = {
-    'top-L' : ' ',
-    'top-M' : ' ',
-    'top-R' : ' ',
-    'mid-L' : ' ',
-    'mid-M' : ' ',
-    'mid-R' : ' ',
-    'low-L' : ' ',
-    'low-M' : ' ',
-    'low-R' : ' '
+    '1' : ' ',
+    '2' : ' ',
+    '3' : ' ',
+    '4' : ' ',
+    '5' : ' ',
+    '6' : ' ',
+    '7' : ' ',
+    '8' : ' ',
+    '9' : ' '
 }
 
 def printBoard(board):
-    print('\n' + board['top-L'] + '|' + board['top-M'] + '|' + board['top-R'])
+    print('\n' + board['1'] + '|' + board['2'] + '|' + board['3'])
     print('-+-+-')
-    print(board['mid-L'] + '|' + board['mid-M'] + '|' + board['mid-R'])
+    print(board['4'] + '|' + board['5'] + '|' + board['6'])
     print('-+-+-')
-    print(board['low-L'] + '|' + board['low-M'] + '|' + board['low-R'] + '\n')
+    print(board['7'] + '|' + board['8'] + '|' + board['9'] + '\n')
+
+'''
+def checkWin(board):
+    if
+    break
+'''
 
 printBoard(theBoard)
 turn = 'X'
