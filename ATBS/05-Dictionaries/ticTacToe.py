@@ -3,7 +3,13 @@ This program demonstrates a simple data structure to model a game board for Tic 
 Written in Python 3.5.1 on Mac
 """
 
-theBoard = {'top-L':,'','top-M':'','top-R',
-'mid-L':'','mid-M':'','mid-R':'',
-''
+theBoard = {
+    'top-L' : '',
+    'top-M' : '',
+    'top-R' : '',
+    'mid-L' : '',
+    'mid-M' : '',
+    'mid-R' : ''
 }
+
+print(theBoard)
