@@ -44,24 +44,24 @@ def checkMove(move):
             continue
 
 def checkWin(board, player):
-    return ((board[1] == player and board[2] == player and board[3] == player) or
-    (board[4] == player and board[5] == player and board[6] == player) or
-    (board[7] == player and board[8] == player and board[9] == player) or
-    (board[1] == player and board[4] == player and board[7] == player) or
-    (board[2] == player and board[5] == player and board[8] == player) or
-    (board[3] == player and board[6] == player and board[9] == player) or
-    (board[1] == player and board[5] == player and board[9] == player) or
-    (board[3] == player and board[5] == player and board[7] == player))
+    if ((board[1] == player and board[2] == player and board[3] == player) or \
+    (board[4] == player and board[5] == player and board[6] == player) or \
+    (board[7] == player and board[8] == player and board[9] == player) or \
+    (board[1] == player and board[4] == player and board[7] == player) or \
+    (board[2] == player and board[5] == player and board[8] == player) or \
+    (board[3] == player and board[6] == player and board[9] == player) or \
+    (board[1] == player and board[5] == player and board[9] == player) or \
+    (board[3] == player and board[5] == player and board[7] == player)):
+        printBoard(theBoard)
+        print(player + ' is the winner!\n')
+        return True
 
 for i in range(9):
     if checkWin(theBoard, 'X'):
-        printBoard(theBoard)
-        print('X is the winner!')
         break
     if checkWin(theBoard, 'O'):
-        printBoard(theBoard)
-        print('O is the winner!')
         break
+
     prompt = 'Turn for ' + turn + '. Move on which space? (1-9) '
     printBoard(theBoard)
     move = input(prompt)
