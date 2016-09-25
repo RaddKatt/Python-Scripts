@@ -50,6 +50,7 @@ def checkWin(board):
 '''
 
 for i in range(9):
+    # checkWin(board)
     prompt = 'Turn for ' + turn + '. Move on which space? (1-9) '
     printBoard(theBoard)
     move = input(prompt)
