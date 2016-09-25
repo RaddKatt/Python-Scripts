@@ -26,21 +26,24 @@ def printBoard(board):
 
 def checkMove(move):
     while True:
-        errMsg = '-- Move entered must be a number between 1 and 9. --'
+        errMsgs = ['-- Move entered must be a number between 1 and 9. --',
+                '-- Space ' + str(move) + ' is already taken. Try again. --'
+                ]
+
         try:
             move = int(move)            # if move is an integer
             if move < 1 or move > 9:    # if move is lt 1 or gt 9
-                print(errMsg)
+                print(errMsgs[0])
                 move = input(prompt)
                 continue
             elif theBoard[move] != ' ': # if space is already taken
-                print('-- Space ' + str(move) + ' is already taken. Try again. --')
+                print(errMsgs[1])
                 move = input(prompt)
                 continue
             else:
                 return move
         except:                         # if move is not an integer
-            print(errMsg)
+            print(errMsgs[0])
             move = input(prompt)
             continue
 
