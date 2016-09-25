@@ -1,5 +1,5 @@
 """
-This program demonstrates the use of nested dictionariees
+This program demonstrates the use of nested dictionaries
 Written in Python 3.5.1 on Mac
 """
 
