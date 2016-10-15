@@ -3,7 +3,6 @@
 import urllib.request
 import re
 
-#tcodes = ['abcdefg', 'RRMX']
 tcodesFound = 0
 tcodesNotFound = 0
 
