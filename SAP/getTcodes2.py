@@ -16,9 +16,12 @@ def parseValues(searchString):
     parsed = re.sub(',', ';', parsed.rstrip())
     parsed = re.sub('"', '`', parsed.rstrip())
     parsed = re.sub("'", '`', parsed.rstrip())
+    parsed = re.sub('&gt;', '>', parsed.rstrip())
+    parsed = re.sub('&lt;', '<', parsed.rstrip())
+    parsed = re.sub('&#39;', "'", parsed.rstrip())
     return parsed
 
-sourceFile = open('SAP-Transaction-Codes-test_small.txt','r')
+sourceFile = open('SAP-Transaction-Codes-before.txt','r')
 sourceFileLines = sourceFile.readlines()
 sourceFileLines.sort()
 
