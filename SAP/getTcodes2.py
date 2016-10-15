@@ -5,11 +5,22 @@ import re
 
 tcodesFound = 0
 tcodesNotFound = 0
+tcodeList = ['TC,TC_Description,TC_Main_Category,TC_Sub_Category']
 
-print('\n')
+def parseValues(searchString):
+    parsed = re.findall(searchString, text)
+    parsed = str(parsed[0])
+    parsed = re.findall('<small>\s+(.*)</small>', parsed)
+    parsed = str(parsed[0])
+    parsed = re.sub('\s*$','', parsed.rstrip())
+    parsed = re.sub(',',';', parsed.rstrip())
+    return parsed
 
-sourceFile = open('SAP-Transaction-Codes-test1.txt','r')
-for tcode in sourceFile.readlines():
+sourceFile = open('SAP-Transaction-Codes-test_small.txt','r')
+sourceFileLines = sourceFile.readlines()
+sourceFileLines.sort()
+
+for tcode in sourceFileLines:
     tcode = re.sub('\n','', tcode.rstrip())
     try:
         req = urllib.request.Request('http://www.tcodesearch.com/sap-tcodes/detail?id=' + tcode)
@@ -17,17 +28,22 @@ for tcode in sourceFile.readlines():
         html = resp.read()
         text = html.decode() #Convert the bytes to a string.
 
-        tcodeDesc = re.findall('Description :.*\n.*', text)
-        tcodeDesc = str(tcodeDesc[0])
-        tcodeDesc = re.findall('<small>\s+(.*)</small>', tcodeDesc)
-        tcodeDesc = str(tcodeDesc[0])
-        tcodeDesc = re.sub('\s*$','', tcodeDesc.rstrip())
-        print(tcode + ',Not_Found,' + tcodeDesc)
+        tcodeDesc = parseValues('Description :.*\n.*')
+        tcodeMainCat = parseValues('Main Category :.*\n.*')
+        tcodeSubCat = parseValues('Sub Category :.*\n.*')
+
+        tcodeList.append(tcode + ',' + tcodeDesc + ',' + tcodeMainCat + ',' + tcodeSubCat)
+        print(tcode + ',' + tcodeDesc + ',' + tcodeMainCat + ',' + tcodeSubCat)
         tcodesFound += 1
 
     except:
         tcodesNotFound += 1
         continue
+
+newFile = open('SAP-Transaction-Codes-New.csv', 'w')
+
+for tcode in tcodeList:
+  newFile.write("%s\n" % tcode)
 
 print('\nDone.')
 print('Tcodes Found: ' + str(tcodesFound))
