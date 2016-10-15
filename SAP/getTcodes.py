@@ -8,7 +8,7 @@ tcodesNotFound = 0
 
 print('\n')
 
-sourceFile = open("SAP-Tcodes-No-Descriptions.csv","r")
+sourceFile = open('SAP-Tcodes-No-Descriptions.csv','r')
 for tcode in sourceFile.readlines():
     tcode = re.sub('\n','', tcode.rstrip())
     try:
@@ -17,9 +17,9 @@ for tcode in sourceFile.readlines():
         html = resp.read()
         text = html.decode() #Convert the bytes to a string.
 
-        dataCrop = re.findall("Description :.*\n.*", text)
+        dataCrop = re.findall('Description :.*\n.*', text)
         dataCrop = str(dataCrop[0])
-        dataCrop = re.findall("<small>\s+(.*)</small>", dataCrop)
+        dataCrop = re.findall('<small>\s+(.*)</small>', dataCrop)
         dataCrop = str(dataCrop[0])
         dataCrop = re.sub('\s*$','', dataCrop.rstrip())
         print(tcode + ',Not_Found,' + dataCrop)
