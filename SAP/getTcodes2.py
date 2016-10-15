@@ -17,12 +17,12 @@ for tcode in sourceFile.readlines():
         html = resp.read()
         text = html.decode() #Convert the bytes to a string.
 
-        dataCrop = re.findall('Description :.*\n.*', text)
-        dataCrop = str(dataCrop[0])
-        dataCrop = re.findall('<small>\s+(.*)</small>', dataCrop)
-        dataCrop = str(dataCrop[0])
-        dataCrop = re.sub('\s*$','', dataCrop.rstrip())
-        print(tcode + ',Not_Found,' + dataCrop)
+        tcodeDesc = re.findall('Description :.*\n.*', text)
+        tcodeDesc = str(tcodeDesc[0])
+        tcodeDesc = re.findall('<small>\s+(.*)</small>', tcodeDesc)
+        tcodeDesc = str(tcodeDesc[0])
+        tcodeDesc = re.sub('\s*$','', tcodeDesc.rstrip())
+        print(tcode + ',Not_Found,' + tcodeDesc)
         tcodesFound += 1
 
     except:
