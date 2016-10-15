@@ -724,7 +724,7 @@ C201,Create Master Recipe,PP,Master Recipe
 C202,Change Master Recipe,PP,Master Recipe
 C203,Display Master Recipe,PP,Master Recipe
 C210,Delete Costing Ind. for Operations,PP,Master Recipe
-C211,Delete &quot;Flexible Duration&quot; Ind. Oper,PP,Master Recipe
+C211,Delete `Flexible Duration` Ind. Oper,PP,Master Recipe
 C223,Maintain Production Versions,PP,Basic Data
 C223_D,Display Production Version,PP,Basic Data
 C251,Print Master Recipes,PP,Master Recipe
@@ -1704,7 +1704,7 @@ CO83,Number range maintenance: RESB,PP,Production Orders
 CO88,Act. Settlment: Prod./Process Orders,CO,Overhead Cost Orders
 CO8A,Presett. Co-Products; Postprocessing,CO,Overhead Cost Orders
 CO8B,Presett. Co-Products; Postprocessing,CO,Overhead Cost Orders
-CO99,Set Status &quot;Closed&quot;,CO,Overhead Cost Orders
+CO99,Set Status `Closed`,CO,Overhead Cost Orders
 COA3,PP: Archiving orders - retrieval,PP,Order Closing
 COA4,PP: Archiving order - administration,PP,Order Closing
 COA7,Process Order: Retrieval - Archive,PP,Process Order
@@ -7370,7 +7370,7 @@ MB00,Inventory Management,MM,Inventory Management
 MB01,Post Goods Receipt for PO,MM,Inventory Management
 MB02,Change Material Document,MM,Inventory Management
 MB03,Display Material Document,MM,Inventory Management
-MB04,Subsequ.Adj.of &quot;Mat.Provided&quot;Consmp.,MM,Inventory Management
+MB04,Subsequ.Adj.of `Mat.Provided`Consmp.,MM,Inventory Management
 MB05,Subseq. Adjustmt: Act.Ingredient Mat,Logistics,Batches
 MB0A,Post Goods Receipt for PO,MM,Inventory Management
 MB11,Goods Movement,MM,Inventory Management
@@ -9432,7 +9432,7 @@ OK01,Controlling Area: Components/StKFs,CO,Overhead Cost Controlling
 OK02,Maintain Status Profiles,CO,Overhead Cost Orders
 OK03,Display Status Profiles,CO,Overhead Cost Orders
 OK11,Number Ranges for Cost Plg/Budgeting,FI,Funds Management
-OK12,Reset &quot;Budgeted&quot; Status,CO,Cost Planning in the WBS
+OK12,Reset `Budgeted` Status,CO,Cost Planning in the WBS
 OK13,Maintain Reconcil. Ledger Nr. Ranges,CO,Cost Element Accounting
 OK15,Maintain authorization group version,CO,Overhead Cost Controlling
 OK16,Planner Profiles: Maint. Auth.Group,CO,Cost Center Accounting
@@ -9454,7 +9454,7 @@ OKC5,Delete cost elements,CO,Overhead Cost Controlling
 OKC6,Delete Activity Types,CO,Overhead Cost Controlling
 OKCC,Maintain Sender Structures,Enterprice Controlling,Data Collection
 OKCI,Display Characteristic Values,Enterprice Controlling,Data Collection
-OKCX,Change &quot;All Currencies&quot; Indicator,CO,Overhead Cost Controlling
+OKCX,Change `All Currencies` Indicator,CO,Overhead Cost Controlling
 OKD1,Export CO-CCA Reports,CO,Overhead Cost Controlling
 OKD3,Import CO-CCA Reports,CO,Overhead Cost Controlling
 OKD6,Import Individual Reports,CO,Overhead Cost Controlling
@@ -9695,7 +9695,7 @@ OMK4,CondTable: Create (Batches; WM),Logistics,Batches
 OMK5,CondTable: Change (Batches; WM),Logistics,Batches
 OMK6,CondTable: Display (Batches; WM),Logistics,Batches
 OMK7,Batch WM..... (will be deleted),Logistics Execution,Other Functions
-OMKW,Stock removal strategy &quot;SLED&quot;,Logistics Execution,Other Functions
+OMKW,Stock removal strategy `SLED`,Logistics Execution,Other Functions
 OMKX,Automatic Transfer Orders,Logistics Execution,Other Functions
 OMKY,Link to External System via ALE,Logistics Execution,Other Functions
 OMKZ,Automatic Transfer Orders,Logistics Execution,Other Functions
@@ -9926,9 +9926,9 @@ OPLB,CondTab: Create (batch; prod.),PP,Order Planning
 OPLC,CondTab: Change (batchs; prod.),PP,Order Planning
 OPLD,CondTab: Display (batches; prod.),PP,Order Planning
 OPLI,Background job for goods movements,PP,Order Planning
-OPLJ,Job &quot;Fast entry confirmation&quot;,PP,Order Planning
+OPLJ,Job `Fast entry confirmation`,PP,Order Planning
 OPLL,Order progress: Displayed fields,PP,Order Planning
-OPLP,Job &quot;Convert planned order&quot;,PP,Order Planning
+OPLP,Job `Convert planned order`,PP,Order Planning
 OPMI,Import models activities,CO,Overhead Cost Controlling
 OPMJ,Determine progress values,PP,Production Orders
 OPN1,Maintain Profiles for Master Recipes,PP,Master Recipe
@@ -9963,7 +9963,7 @@ OPSN,Edit PS substitution rules,Project Systems,Project System
 OPSO,Maintain Project Types,Project Systems,Operative Structures
 OPSP,Capacity availability check,Project Systems,Project System
 OPST,Network Confirmation Parameters,Project Systems,Project System
-OPSX,PS: Reset &quot;Budgeted&quot; Status,CO,Cost Planning in the WBS
+OPSX,PS: Reset `Budgeted` Status,CO,Cost Planning in the WBS
 OPT2,Matchcode for project definition,Project Systems,Operative Structures
 OPT3,Matchcode for WBS elements,Project Systems,Operative Structures
 OPT4,Matchcode for standard network,Project Systems,Standard Network
@@ -10057,12 +10057,12 @@ OV7Z,Create Characteristics for Rem.Alloc,SD,Basic Data
 OV8Z,Check Settings,SD,Basic Data
 OV90,COPA project: Create table,SD,Account Determination
 OV9Z,Suitable Statistical Structures,SD,Basic Data
-OVA0,C_RV_Tab. VVVS &quot;Status group&quot;,Logistics Execution,Shipping
+OVA0,C_RV_Tab. VVVS `Status group`,Logistics Execution,Shipping
 OVAA,C SD Tab. VAG  Rejection Reasons,SD,Basic Functions
 OVAE,C SD Tab. VEP   Orders,SD,Basic Functions
 OVAG,C SD Tab. VAG  Rejection Reasons,SD,Basic Functions
 OVAR,C SD Tab. ROAZ  Route Determination,SD,Basic Functions
-OVAS,C SD Tab. VAST &quot;Order: Block Reasons,SD,Basic Functions
+OVAS,C SD Tab. VAST `Order: Block Reasons,SD,Basic Functions
 OVAT,C SD Tab. TXVR  Copy Document Text,SD,Basic Functions
 OVAU,C SD Tab. VAU  Other Reasons,SD,Basic Functions
 OVAZ,C SD Tab. VAKZ  Order Type/Organiz.,SD,Basic Functions
@@ -10072,17 +10072,17 @@ OVCB,Structure of Reporting View,SD,Sales Promotions
 OVCC,Assign View to User,SD,Sales Promotions
 OVCD,Definition of Reporting View,SD,Sales Promotions
 OVCE,Control Update of Perform.Measures,SD,Sales Promotions
-OVE6,C RV Table T616 &quot;Exp/Import Proced.,SD,Account Determination
-OVE7,C SD Table T616Z &quot;BusTransTypeProp.,SD,Account Determination
-OVE8,C SD Table TVFM &quot;MatPrGrp-Imp/Exp,SD,Account Determination
-OVF3,C_RV_Tab. VAUK    &quot;Cost Centers&quot;,Logistics Execution,Shipping
+OVE6,C RV Table T616 `Exp/Import Proced.,SD,Account Determination
+OVE7,C SD Table T616Z `BusTransTypeProp.,SD,Account Determination
+OVE8,C SD Table TVFM `MatPrGrp-Imp/Exp,SD,Account Determination
+OVF3,C_RV_Tab. VAUK    `Cost Centers`,Logistics Execution,Shipping
 OVG1,Redetermine subtotal,SD,Billing
 OVH1,C RV Tab. THIT    Hierarchy Type,SD,Basic Functions
 OVH2,C SD Tab. THIZU  AcctGrpAssignment,SD,Basic Functions
 OVH3,C RV Tab. THIOZ  Org.assignments,SD,Basic Functions
-OVK1,C SD Table V_TST &quot;Tax Catg./Country&quot;,SD,Material Maintenance
-OVK3,C SD Table TSKD &quot;Cust.Tax Indicator&quot;,SD,Material Maintenance
-OVK4,C SD Table TSKM  &quot;Mat.Tax Indicator&quot;,SD,Material Maintenance
+OVK1,C SD Table V_TST `Tax Catg./Country`,SD,Material Maintenance
+OVK3,C SD Table TSKD `Cust.Tax Indicator`,SD,Material Maintenance
+OVK4,C SD Table TSKM  `Mat.Tax Indicator`,SD,Material Maintenance
 OVK5,V Table VKM    Material Acct Grp,SD,Output Determination
 OVK8,C SD Tab. TVKT   Customer Acct Grp,SD,Output Determination
 OVLA,C SD Tab T173       Shipping Types,Logistics Execution,Basic Functions
@@ -10098,7 +10098,7 @@ OVNM,C SD Background job messages,SD,Output Determination
 OVNN,C SD Output Variants,SD,Output Determination
 OVR0,SD Table 171     Sales Regions,Logistics Execution,Basic Functions
 OVR1,SD Table ZONE  Transportation Zones,Logistics Execution,Basic Functions
-OVR2,c_rv_Tab. T016  &quot;Sectors&quot;,Logistics Execution,Shipping
+OVR2,c_rv_Tab. T016  `Sectors`,Logistics Execution,Shipping
 OVR3,C SD Tab. Customer Calendar,SD,Output Determination
 OVR4,C SD Tab. Billing Schedules,SD,Output Determination
 OVRB,Statistical Currency per Sales Org.,SD,Basic Functions
@@ -10107,20 +10107,20 @@ OVRF,C SD Table TVSM Material Stats Grps,SD,Account Determination
 OVRG,C SD Background Jobs f. Top Cust/Mat,SD,Account Determination
 OVS1,SD Matchcodes Materials,SD,Material Maintenance
 OVS2,C SD Matchcodes Customers,SD,Material Maintenance
-OVS6,C SD Table TKUKL &quot;Customer Classif.&quot;,SD,Material Maintenance
-OVS9,C SD Table T151    &quot;Customer Groups&quot;,SD,Material Maintenance
-OVSC,C SD Table TVWA &quot;GoodsReceivingHrs.&quot;,SD,Material Maintenance
-OVSD,C SD Tab.TPRIO &quot;Delivery Priorities&quot;,SD,Material Maintenance
-OVSF,C SD Table TVSB  &quot;Shipping Cond.&quot;,SD,Material Maintenance
-OVSG,C SD Table TINC    &quot;Incoterms&quot;,SD,Material Maintenance
-OVSI,C SD View V_T189 &quot;Price List Categ.&quot;,SD,Material Maintenance
-OVSJ,C SD Table T178 &quot;Mat.Cond.Group&quot;,SD,Material Maintenance
+OVS6,C SD Table TKUKL `Customer Classif.`,SD,Material Maintenance
+OVS9,C SD Table T151    `Customer Groups`,SD,Material Maintenance
+OVSC,C SD Table TVWA `GoodsReceivingHrs.`,SD,Material Maintenance
+OVSD,C SD Tab.TPRIO `Delivery Priorities`,SD,Material Maintenance
+OVSF,C SD Table TVSB  `Shipping Cond.`,SD,Material Maintenance
+OVSG,C SD Table TINC    `Incoterms`,SD,Material Maintenance
+OVSI,C SD View V_T189 `Price List Categ.`,SD,Material Maintenance
+OVSJ,C SD Table T178 `Mat.Cond.Group`,SD,Material Maintenance
 OVSL,Pricing groups for customers,SD,Material Maintenance
-OVSU,C SD Table TUMS    &quot;Material Status&quot;,SD,Material Maintenance
+OVSU,C SD Table TUMS    `Material Status`,SD,Material Maintenance
 OVSV,C RV Customizing Product Hierarchy,SD,Material Maintenance
 OVSX,C SD Table TLGR,SD,Material Maintenance
 OVSY,C SD Table TGR,SD,Material Maintenance
-OVT0,C SD Table 077D &quot;Accnt Grp Customer&quot;,SD,Material Maintenance
+OVT0,C SD Table 077D `Accnt Grp Customer`,SD,Material Maintenance
 OVV3,C SD Table TVFS   Billing Block,SD,Account Determination
 OVX2,Business area->Plant/Division,SD,Material Maintenance
 OVX3,Company code -> Sales organization,SD,Material Maintenance
@@ -10132,7 +10132,7 @@ OVXG,Define sales areas,SD,Material Maintenance
 OVXJ,Sales group -> Sales office,SD,Material Maintenance
 OVXK,Distrib.channels->Sales organiz.,SD,Material Maintenance
 OVXM,Sales office -> Sales area,SD,Material Maintenance
-OVXZ,C SD Table NLS  &quot;Nielsen ID,SD,Output Determination
+OVXZ,C SD Table NLS  `Nielsen ID,SD,Output Determination
 OVZ1,C SD Tab. TMVFP Avail.check criteria,SD,Account Determination
 OVZ2,C SD Tab. MVF  Avail. check control,SD,Account Determination
 OVZ3,C SD Tab. TMVFU Avail.check criteria,SD,Account Determination
