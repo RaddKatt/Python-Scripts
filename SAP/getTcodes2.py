@@ -12,8 +12,10 @@ def parseValues(searchString):
     parsed = str(parsed[0])
     parsed = re.findall('<small>\s+(.*)</small>', parsed)
     parsed = str(parsed[0])
-    parsed = re.sub('\s*$','', parsed.rstrip())
-    parsed = re.sub(',',';', parsed.rstrip())
+    parsed = re.sub('\s*$', '', parsed.rstrip())
+    parsed = re.sub(',', ';', parsed.rstrip())
+    parsed = re.sub('"', '`', parsed.rstrip())
+    parsed = re.sub("'", '`', parsed.rstrip())
     return parsed
 
 sourceFile = open('SAP-Transaction-Codes-test_small.txt','r')
