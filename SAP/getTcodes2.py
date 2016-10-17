@@ -1,7 +1,6 @@
 # Retreives SAP tcode descriptions from a lookup site
 
-import urllib.request
-import re
+import urllib.request, re, html
 
 tcodesFound = 0
 tcodesNotFound = 0
@@ -12,15 +11,11 @@ def parseValues(searchString):
     parsed = str(parsed[0])
     parsed = re.findall('<small>\s+(.*)</small>', parsed)
     parsed = str(parsed[0])
+    parsed = html.unescape(parsed)
     parsed = re.sub('\s*$', '', parsed.rstrip())
     parsed = re.sub(',', ';', parsed.rstrip())
     parsed = re.sub('"', '`', parsed.rstrip())
     parsed = re.sub("'", '`', parsed.rstrip())
-    parsed = re.sub('&quot;', '`', parsed.rstrip())
-    parsed = re.sub('&gt;', '>', parsed.rstrip())
-    parsed = re.sub('&lt;', '<', parsed.rstrip())
-    parsed = re.sub('&#39;', '`', parsed.rstrip())
-    parsed = re.sub('&amp;', '&', parsed.rstrip())
     return parsed
 
 sourceFile = open('SAP-Transaction-Codes-before.txt','r')
@@ -32,8 +27,8 @@ for tcode in sourceFileLines:
     try:
         req = urllib.request.Request('http://www.tcodesearch.com/sap-tcodes/detail?id=' + tcode)
         resp = urllib.request.urlopen(req)
-        html = resp.read()
-        text = html.decode() #Convert the bytes to a string.
+        resp_html = resp.read()
+        text = resp_html.decode() #Convert the bytes to a string.
 
         tcodeDesc = parseValues('Description :.*\n.*')
         tcodeMainCat = parseValues('Main Category :.*\n.*')
