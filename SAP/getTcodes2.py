@@ -16,9 +16,11 @@ def parseValues(searchString):
     parsed = re.sub(',', ';', parsed.rstrip())
     parsed = re.sub('"', '`', parsed.rstrip())
     parsed = re.sub("'", '`', parsed.rstrip())
+    parsed = re.sub('&quot;', '`', parsed.rstrip())
     parsed = re.sub('&gt;', '>', parsed.rstrip())
     parsed = re.sub('&lt;', '<', parsed.rstrip())
-    parsed = re.sub('&#39;', "'", parsed.rstrip())
+    parsed = re.sub('&#39;', '`', parsed.rstrip())
+    parsed = re.sub('&amp;', '&', parsed.rstrip())
     return parsed
 
 sourceFile = open('SAP-Transaction-Codes-before.txt','r')
