@@ -3,7 +3,7 @@ import sys, urllib.request, re
 args = len(sys.argv)
 
 if args != 2:
-	print('-- Usage: python simpleDl.py <list_file>')
+	print('-- Usage: python simpleDl.py <url_list>')
 
 else:
 	successes = 0
