@@ -16,11 +16,11 @@ else:
 			line = re.sub('\n', '', line)
 			url = line
 			resource = url.rsplit('/',1)[1]
-			print('Downloading ' + resource + '...')
+			print('Downloading \'' + resource + '\'...')
 			urllib.request.urlretrieve(url, resource)
 			print('\tDone.')
 			successes += 1
 		except:
-			print('\t! Unable to download !')
+			print('\t! Unable to download from \'' + line + '\'!')
 			failures += 1
 	print('Complete. ' + str(successes) + ' successes, ' + str(failures) + ' failures.')
