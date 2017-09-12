@@ -1,5 +1,5 @@
 '''
-This program demonstrates the use of the isX string methods
+This program demonstrates the use of the ljust, rjust, and center string methods
 Written with Python 2.7.12 on Mac
 '''
 
