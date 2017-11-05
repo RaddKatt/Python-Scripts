@@ -3,7 +3,7 @@
 '''
 A phone number–finding program.
 Accomplishes the same task as the previous exercise
-Does so more easily using regular expressions
+But does so more easily using regular expressions
 '''
 
 # Import the regex module
