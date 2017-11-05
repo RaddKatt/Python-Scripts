@@ -1,3 +1,9 @@
+'''
+A phone number–finding program.
+It works, but it uses a lot of code to do something limited.
+Using regular expressions can accomplish this more easily.
+We will demonstrate the 're' module in the next exercise.
+'''
 #!/usr/local/bin/python3
 
 def isPhoneNumber(text):
