@@ -19,6 +19,8 @@ if __name__ == "__main__":
 	## to search for a match object
 	mo = phoneNumRegex.search('My number is 415-555-4242.')
 	if mo is not None:
+		## Return the match
 		print('Phone number found: %s' % mo.group())
 	else:
+		## Report no matches were found
 		print('No phone number was found.')
