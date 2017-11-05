@@ -17,6 +17,7 @@ if __name__ == "__main__":
 	
 	## Use the Regex search method
 	## to search for a match object
+	## and store the result to 'mo'
 	mo = phoneNumRegex.search('My number is 415-555-4242.')
 	if mo is not None:
 		## Return the match
