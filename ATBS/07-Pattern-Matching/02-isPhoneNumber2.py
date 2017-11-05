@@ -4,6 +4,7 @@
 A phone number–finding program.
 Accomplishes the same task as the previous exercise
 But does so more easily using regular expressions
+Written in Python 3.5.2 on Mac
 '''
 
 # Import the regex module

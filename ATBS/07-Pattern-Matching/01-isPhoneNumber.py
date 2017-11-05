@@ -1,10 +1,12 @@
+#!/usr/local/bin/python3
+
 '''
 A phone number–finding program.
 It works, but it uses a lot of code to do something limited.
 Using regular expressions can accomplish this more easily.
 We will demonstrate the 're' module in the next exercise.
+Written in Python 3.5.2 on Mac
 '''
-#!/usr/local/bin/python3
 
 def isPhoneNumber(text):
 	if len(text) != 12:

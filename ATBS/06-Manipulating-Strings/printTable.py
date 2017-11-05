@@ -1,5 +1,7 @@
 #!/usr/local/bin/python
 
+## Written in Python 3.5.1 on Mac
+
 tableData = [['apples', 'oranges', 'cherries', 'banana'],
              ['Alice', 'Bob', 'Carol', 'David'],
              ['dogs', 'cats', 'moose', 'goose']]
