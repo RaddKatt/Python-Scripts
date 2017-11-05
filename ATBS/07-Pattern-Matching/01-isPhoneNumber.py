@@ -1,4 +1,23 @@
-#!/usr/local/bin/python
+#!/usr/local/bin/python3
+
+def isPhoneNumber(text):
+	if len(text) != 12:
+		return False
+	for i in range(0, 3):
+		if not text[i].isdecimal():
+			return False
+	if text[3] != '-':
+		return False
+	for i in range(4, 7):
+		if not text[i].isdecimal():
+			return False
+	if text[7] != '-':
+		return False
+	for i in range(8, 12):
+		if not text[i].isdecimal():
+			return False
+	return True	
 
 if __name__ == '__main__':
-	print('test')
+	print('\'415-555-4242\' is a phone number: ' + str(isPhoneNumber('415-555-4242')))
+	print('\'Moshi moshi\' is a phone number: ' + str(isPhoneNumber('Moshi moshi')))
