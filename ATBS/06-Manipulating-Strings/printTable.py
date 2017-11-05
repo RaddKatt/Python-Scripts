@@ -13,15 +13,13 @@ def printTable():
 		if len(i) > x:
 			x = len(i)
 
-	for i in range(0, x):
-		newTable.append([])
-
-	for i in range(0, len(tableData)):
+	for i in range(len(tableData)):
 		highest = len(max(tableData[i], key=len))
 		colWidths[i] = highest
 
-	for i in range(0, x):
-		for j in range(0, len(tableData)):
+	for i in range(x):
+		newTable.append([])
+		for j in range(len(tableData)):
 			newTable[i].append(tableData[j][i].rjust(colWidths[j]))
 
 	for i in newTable:
